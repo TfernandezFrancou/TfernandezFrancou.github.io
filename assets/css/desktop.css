@@ -220,7 +220,6 @@ body {
 }
 
 input, #msgInput {
-	font-weight: 600;
 	font-size: 18px;
 	color: white;
 	text-align: left;
@@ -242,7 +241,6 @@ input {
 
 #termWrapper {
 	font-family: 'Fira Code', monospace;
-	font-weight: 600;
 	width: 100%;
 	min-width: 50%;
 	overflow: hidden;

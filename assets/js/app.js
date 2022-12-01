@@ -79,6 +79,10 @@ $(document).ready(function() {
 		$("#closeX").click()
 	})
 
+	$(document).click(function () {
+		$('.navbar-collapse').collapse('hide');
+	 });
+
 	$(document).keydown(function(e) {
 		if ($("#popup").is(':visible') && e.key === 'Escape') {
 			$("#popup").click();
