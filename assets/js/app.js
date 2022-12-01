@@ -84,8 +84,14 @@ $(document).ready(function() {
 	 });
 
 	$(document).keydown(function(e) {
-		if ($("#popup").is(':visible') && e.key === 'Escape') {
-			$("#popup").click();
+		if (e.key === 'Escape') {
+			if ($("#popup").is(':visible')) {
+				$("#popup").click();
+			}
+
+			if ($("#navbar").is(':visible')) {
+				$('.navbar-collapse').collapse('hide');
+			}
 		}
 	})
 

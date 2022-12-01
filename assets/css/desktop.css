@@ -111,10 +111,17 @@ body {
 
 .icon {
 	color: rgba(255, 255, 255, 0.4);
-	text-decoration: none;
 	border-bottom: none;
 	position: relative;
 	padding: 0 20px 0;
+}
+
+.fa-regular, .icon {
+	text-decoration: none;
+}
+
+.fa-regular:hover {
+	color: inherit;
 }
 
 .icon:hover {
