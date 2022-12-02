@@ -101,11 +101,11 @@ $(document).ready(function() {
 	})
 
 	$("#nameInput").keydown(function(e) {
-		this.style.width = this.value.length + 1 + 'ch';
+		if(e.key !== 'Enter') this.style.width = this.value.length + 1 + 'ch';
 	})
 
 	$("#emailInput").keydown(function(e) {
-		this.style.width = this.value.length + 1 + 'ch';
+		if(e.key !== 'Enter') this.style.width = this.value.length + 1 + 'ch';
 	})
 
 	function setCaretPosition(ctrl, pos) {
