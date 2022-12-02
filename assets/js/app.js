@@ -100,11 +100,7 @@ $(document).ready(function() {
 		this.style.height = (this.scrollHeight) + 'px';
 	})
 
-	$("#nameInput").keydown(function(e) {
-		if(e.key !== 'Enter') this.style.width = this.value.length + 1 + 'ch';
-	})
-
-	$("#emailInput").keydown(function(e) {
+	$("input").keydown(function(e) {
 		if(e.key !== 'Enter') this.style.width = this.value.length + 1 + 'ch';
 	})
 
